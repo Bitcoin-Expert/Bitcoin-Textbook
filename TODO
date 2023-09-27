@@ -1,0 +1,55 @@
+
+*** ADD CONTENTS so that it is browsable from PDF VIEWERS !!
+
+- clarify soft-fork / hard-fork and add EXAMPLES !!!!! (update slides as well)
+
+- need to check maxtxfee and backup for regtest (or all networks) to ensure that the examples work as expected -- worked fine before 0.22 (?) but requires extra params in the config in newer versions
+
+Re-read whole book and clean according to slide updates
+- done up to half ch6.4
+
+Maybe re-think chapter outline? Re-visit fundamendals chapter?
+- is the tech fundamendals needed?
+
+- revise terminology after terminology BIP has been finalised
+
+CHECK if Nelson Mandela's image is there and display it with a script !
+add OP_RETURN example in scripting
+- that is more work than expected..
+
+need to update from the slides (there are several minor updates and new links/resource
+(should read through the book again and update accordingly)
+
+add descriptors to chapter 5 (keys addresses); referenced from ch1 createwallet command
+add HD wallets to chapter 5 (if lib wraps another lib... document how to create them!)
+
+Test simple lab node config and make sure books mentions it (slides?)
+add relayfee in config??!?! and anything else to run the basic examples!
+
+add P2PK
+
+add RBF intricancies discussion... esp. after full-rbf is enabled?
+add Taproot !!!  
+
+mention bech32m in taproot !!
+(add generating taproot addresses)
+
+add Taproot low level code/examples !!
+- pending taproot lib implementation
+
+add explanation of createwallet command (for 0.21+)
+https://bitcoincore.org/en/releases/0.21.0/
+
+advanced scripting - chapter    
+   hashlocks, swaps, payment channels, ...
+
+add merge mining??
+
+add sidechains high level intro
+- move presentation material
+
+PSBT, statechains, MuSig, JoinMarket, PayJoin, ...
+
+
+ADD
+BIP-8 (34/9?)

@@ -1,0 +1,123 @@
+\documentclass{tstextbook}
+
+% for clickable links
+%\usepackage{hyperref}
+
+% for longtable (multiple pages)
+\usepackage{longtable}
+
+% for 256bit ascii font encoding
+\usepackage[T1]{fontenc}
+
+% for lowercase roman enumerations
+\usepackage{enumerate}
+
+% define colors
+\usepackage{xcolor}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\definecolor{darkblue}{rgb}{0.0, 0.0, 0.55}
+
+% languages listings
+\usepackage{listings}
+
+% for greek in listings
+\usepackage{textgreek}
+\lstset{
+  literate={ε}{{\textepsilon}}1
+}
+
+% listing styles
+\lstdefinestyle{Pseudomath}
+{
+  basicstyle=\ttfamily,
+  mathescape
+}
+
+\lstdefinestyle{Bash}
+{
+  language=bash,
+  showstringspaces=false,
+  %numbers=left,
+  %numberstyle=\color{mygray}\textit,
+  basicstyle=\footnotesize\ttfamily,
+  %keywordstyle=\color{mygreen},
+  %commentstyle=\color{mymauve},
+  %identifierstyle=\color{blue},
+  %stringstyle=\color{orange}
+}
+
+\lstdefinestyle{Python}
+{
+  language=Python,
+  showstringspaces=false,
+  numbers=left,
+  numberstyle=\color{mygray}\textit,
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\color{mygreen},
+  commentstyle=\color{mymauve},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange}
+}
+
+
+
+
+\begin{document}
+
+\tsbook{Bitcoin Programming}
+       {Konstantinos Karasavvas}
+       {}
+       {2022}
+       {}{}{}
+       {v0.4}
+       {}
+%       {Cover Designer}
+%       {2017}
+%       {xxxxx}{xxx--xx--xxxx--xx--x}{0.0}
+%       {Publisher}
+%       {City}
+
+% Conventions
+%---------------------------------------------------------------------------
+% using emphbox to emphasize some text or a formula
+% using note to NOTE something important
+%---------------------------------------------------------------------------
+
+%---------------------------------------------------------------------------
+% Chapters
+%---------------------------------------------------------------------------
+
+% introduction
+\include{preface}
+\include{howbitcoinworks}
+\include{p2pnetworking}
+\include{forking}
+\include{technicalfundamentals}
+\include{keysandaddresses}
+\include{scripting}
+\include{scripting2}
+\include{advancedtopics}
+
+%---------------------------------------------------------------------------
+% Appendices?
+%---------------------------------------------------------------------------
+%\include{installnode}
+
+
+
+%---------------------------------------------------------------------------
+% Bibliography
+%---------------------------------------------------------------------------
+
+\addcontentsline{toc}{chapter}{\textcolor{tssteelblue}{Literature}}
+\printbibliography{}
+
+%---------------------------------------------------------------------------
+% Index
+%---------------------------------------------------------------------------
+
+\printindex
+
+\end{document}
